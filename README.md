@@ -4,8 +4,31 @@
 
 > "Create your own Enumerable" tests the knowledge of class, methods and enumerables in Ruby.
 
+## Built With
+- Ruby
+- Git
+- Github
+-Rubocop
+
 
 ## Getting Started
+To get a local copy of the program running, follow these simple steps
+
+### Prerequisites
+- IDE, preferably Visual Studio Code
+
+### Install
+- Ruby
+
+### Setup
+- Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
+- Clone the repository with git clone https://github.com/wale-prog/enumerable.git
+- To get the curent working tree, git fetch --all, then checkout to "enum" branch.
+- Finally, run the application by doing the following:
+  - navigate to the root directory with a command line preferably ubuntu terminal
+  - run 'bundle install'
+  - run irb
+  - run the commands contained in list.rb
 
 ## Authors
 
