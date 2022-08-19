@@ -3,15 +3,21 @@
 require_relative 'my_enumerable'
 
 # Created a new class called List that inherits from MyEnumerable
-class List
+class MyList
   include MyEnumerable
 
   def initialize(*list)
     @list = list
   end
 
-  def each(&block)
-    @list.each(&block)
+  def each
+    return to_enum(:each) unless block_given?
+    counter = 0
+    while counter < @list.length
+      yield(@list[counter])
+      counter += 1
+    end
+    @list
   end
 end
 
