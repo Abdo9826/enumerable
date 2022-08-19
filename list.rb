@@ -12,6 +12,7 @@ class MyList
 
   def each
     return to_enum(:each) unless block_given?
+
     counter = 0
     while counter < @list.length
       yield(@list[counter])
